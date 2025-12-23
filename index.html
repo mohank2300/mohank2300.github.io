@@ -3,88 +3,267 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mohan | Portfolio</title>
+  <title>Mohan | Full-Stack Developer</title>
+  <meta name="description" content="Mohan's portfolio – Full-stack developer building Spring Boot APIs and Angular UIs." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header class="container">
-    <nav class="nav">
-      <div class="logo">Mohan</div>
-      <div class="links">
+  <!-- Background decoration -->
+  <div class="bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Top bar -->
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="#">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Mohan</span>
+      </a>
+
+      <nav class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-      </div>
-    </nav>
+      </nav>
 
-    <section class="hero">
-      <h1>Hi, I’m Mohan</h1>
-      <p class="subtitle">
-        Full-stack developer building REST APIs with Java & Spring Boot
-        and Angular user interfaces.
-      </p>
-
-      <div class="buttons">
-        <a class="btn" href="#projects">View Projects</a>
-        <a class="btn-outline" href="https://github.com/mohank2300" target="_blank">GitHub</a>
-      </div>
-    </section>
+      <a class="nav-cta"
+         href="https://github.com/mohank2300"
+         target="_blank"
+         rel="noopener noreferrer">
+        GitHub
+      </a>
+    </div>
   </header>
 
-  <main class="container">
+  <!-- Hero -->
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="pill">
+          <span class="pill-dot"></span>
+          Full-Stack Developer • Angular + Spring Boot
+        </p>
+
+        <h1>
+          Building clean APIs and modern UIs
+          <span class="accent">that feel real.</span>
+        </h1>
+
+        <p class="lead">
+          Hi, I’m <strong>Mohan</strong>. I build REST APIs using <strong>Java/Spring Boot</strong>
+          and frontend apps using <strong>Angular</strong>. I like clean structure, readable code,
+          and projects that actually work end-to-end.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost"
+             href="mailto:mohankn603@gmail.com">
+            Email Me
+          </a>
+        </div>
+
+        <div class="quick">
+          <div class="quick-card">
+            <div class="quick-title">Backend</div>
+            <div class="quick-text">Spring Boot • REST • Maven</div>
+          </div>
+          <div class="quick-card">
+            <div class="quick-title">Frontend</div>
+            <div class="quick-text">Angular • TypeScript • UI</div>
+          </div>
+          <div class="quick-card">
+            <div class="quick-title">Tools</div>
+            <div class="quick-text">Git • GitHub • CLI</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="showcase">
+          <div class="showcase-top">
+            <div class="dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="fake-url">mohank2300.github.io</div>
+          </div>
+
+          <div class="showcase-body">
+            <div class="stat">
+              <div class="stat-label">Projects</div>
+              <div class="stat-value">2+</div>
+            </div>
+            <div class="stat">
+              <div class="stat-label">Focus</div>
+              <div class="stat-value">Full-Stack</div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="mini-list">
+              <div class="mini-item">
+                <div class="mini-icon">☕</div>
+                <div>
+                  <div class="mini-title">Coffee API</div>
+                  <div class="mini-sub">Spring Boot REST API</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-icon">🖥️</div>
+                <div>
+                  <div class="mini-title">Coffee UI</div>
+                  <div class="mini-sub">Angular Frontend</div>
+                </div>
+              </div>
+
+              <div class="mini-item">
+                <div class="mini-icon">📸</div>
+                <div>
+                  <div class="mini-title">Screenshots</div>
+                  <div class="mini-sub">Included in repo README</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="showcase-actions">
+              <a class="chip"
+                 href="https://github.com/mohank2300"
+                 target="_blank"
+                 rel="noopener noreferrer">GitHub</a>
+              <a class="chip"
+                 href="mailto:mohankn603@gmail.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Real projects with code, structure, and working UI.</p>
+      </div>
 
-      <div class="grid">
+      <div class="cards">
         <article class="card">
-          <h3>Coffee API</h3>
-          <p>Spring Boot REST API for managing coffee items and orders.</p>
-          <p class="meta">Java · Spring Boot · Maven</p>
-          <a class="card-link" href="https://github.com/mohank2300/coffee-api" target="_blank">
-            GitHub Repository →
-          </a>
+          <div class="card-badge">Backend</div>
+          <h3>☕ Coffee API</h3>
+          <p>
+            Spring Boot REST API for managing coffee items and orders.
+            Built to practice clean controllers, models, and real backend workflows.
+          </p>
+          <div class="stack">
+            <span>Java</span><span>Spring Boot</span><span>Maven</span>
+          </div>
+          <div class="card-actions">
+            <a class="link"
+               href="https://github.com/mohank2300/coffee-api"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Repository →
+            </a>
+          </div>
         </article>
 
         <article class="card">
-          <h3>Coffee UI</h3>
-          <p>Angular frontend application connected to the Coffee API.</p>
-          <p class="meta">Angular · TypeScript · HTML/CSS</p>
-          <a class="card-link" href="https://github.com/mohank2300/coffee-ui" target="_blank">
-            GitHub Repository →
-          </a>
+          <div class="card-badge alt">Frontend</div>
+          <h3>🖥️ Coffee UI</h3>
+          <p>
+            Angular UI connected to the Coffee API. Includes UI screenshots inside the repo README.
+            Built to practice services, API integration, and clean UI structure.
+          </p>
+          <div class="stack">
+            <span>Angular</span><span>TypeScript</span><span>HTML/CSS</span>
+          </div>
+          <div class="card-actions">
+            <a class="link"
+               href="https://github.com/mohank2300/coffee-ui"
+               target="_blank"
+               rel="noopener noreferrer">
+              View Repository →
+            </a>
+            <a class="link subtle"
+               href="https://github.com/mohank2300/coffee-ui#screenshots"
+               target="_blank"
+               rel="noopener noreferrer">
+              Screenshots →
+            </a>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="tags">
-        <span class="tag">Java</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">REST APIs</span>
-        <span class="tag">SQL / MySQL</span>
-        <span class="tag">Angular</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">Git</span>
-        <span class="tag">GitHub</span>
-        <span class="tag">AWS (basic)</span>
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>What I use to build and ship projects.</p>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-box">
+          <div class="skill-title">Backend</div>
+          <div class="skill-tags">
+            <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Maven</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-title">Frontend</div>
+          <div class="skill-tags">
+            <span>Angular</span><span>TypeScript</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-box">
+          <div class="skill-title">Data & Tools</div>
+          <div class="skill-tags">
+            <span>SQL / MySQL</span><span>Git</span><span>GitHub</span><span>AWS (basic)</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="contact">
-        <a href="https://github.com/mohank2300" target="_blank">GitHub</a>
-        <a href="mailto:mohankn603@gmail.com">mohankn603@gmail.com</a>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Want to connect? Reach me here.</p>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <div class="contact-label">Email</div>
+          <a class="contact-value" href="mailto:mohankn603@gmail.com">mohankn603@gmail.com</a>
+        </div>
+        <div class="contact-row">
+          <div class="contact-label">GitHub</div>
+          <a class="contact-value"
+             href="https://github.com/mohank2300"
+             target="_blank"
+             rel="noopener noreferrer">github.com/mohank2300</a>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:mohankn603@gmail.com">Email</a>
+          <a class="btn dark"
+             href="https://github.com/mohank2300"
+             target="_blank"
+             rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Mohan • Built with GitHub Pages</p>
+    </footer>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> Mohan</p>
-    </div>
-  </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
