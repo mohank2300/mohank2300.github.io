@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">Mohan</div>
+      <div class="links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Hi, I’m Mohan 👋</h1>
+      <p class="subtitle">
+        Full-stack developer (Backend + Frontend). I build REST APIs with Java/Spring Boot
+        and Angular UIs that connect to real services.
+      </p>
+      <div class="buttons">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn btn-outline" href="https://github.com/mohank2300" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>☕ Coffee API</h3>
+          <p>Spring Boot REST API for managing coffee items and orders.</p>
+          <p class="meta">Java • Spring Boot • Maven</p>
+          <div class="card-actions">
+            <a class="card-link" href="https://github.com/mohank2300/coffee-api" target="_blank" rel="noreferrer">Repo →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>🖥️ Coffee UI</h3>
+          <p>Angular frontend that connects to the Coffee API.</p>
+          <p class="meta">Angular • TypeScript • HTML/CSS</p>
+          <div class="card-actions">
+            <a class="card-link" href="https://github.com/mohank2300/coffee-ui" target="_blank" rel="noreferrer">Repo →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>UI screenshots:</strong>
+        View them in the Coffee UI repo README (scroll to Screenshots).
+        <a href="https://github.com/mohank2300/coffee-ui" target="_blank" rel="noreferrer">Open Coffee UI →</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">REST APIs</span>
+        <span class="tag">SQL / MySQL</span>
+        <span class="tag">Maven</span>
+        <span class="tag">Angular</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">AWS (basic)</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Reach me here:</p>
+      <div class="contact">
+        <a href="https://github.com/mohank2300" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:your-email@example.com">Email</a>
+      </div>
+      <p class="tiny">Tip: replace the email above with your real email.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mohan</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
